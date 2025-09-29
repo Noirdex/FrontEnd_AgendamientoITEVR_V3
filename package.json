@@ -1,11 +1,13 @@
+@'
 {
-  "name": "agendamiento-web-static-server",
+  "name": "agendamiento-frontend-web",
   "version": "1.0.0",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "serve -s build/web -l ${PORT:-8080}"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "serve": "^14.2.1"
   }
 }
+'@ | Set-Content -Path ".\package.json" -NoNewline
