@@ -1,13 +1,11 @@
-@'
 {
   "name": "agendamiento-frontend-web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "serve -s build/web -l ${PORT:-8080}"
+    "start": "serve -s build/web -l $PORT"
   },
   "dependencies": {
     "serve": "^14.2.1"
   }
 }
-'@ | Set-Content -Path ".\package.json" -NoNewline
